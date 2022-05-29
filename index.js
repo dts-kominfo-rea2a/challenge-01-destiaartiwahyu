@@ -3,27 +3,38 @@
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
 // user satu
+const restoFirstUser = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"];
+let setRestoFirstUser = new Set(restoFirstUser);
+
+const colorFirstUser = ["Yellow", "Pink", "White", "Purple"];
+let setColorFirstUser = new Set(colorFirstUser);
 const firstUser = {
     name: 'Monica',
     gender: 'Female',
     age: 17,
     email: 'monica@dingdong.com',
-    favoriteColor: new Set('Yellow','Pink', 'White', 'Purple'),
+    favoriteColor: [...setColorFirstUser],
     isHavePet: 'Yes',
     education: [
         { name: "SD 01", city: "Jakarta", graduate: "2016" },
         { name: "SMP 02", city: "Jakarta", graduate: "2019" },
         { name: "SMA 03", city: "Tangerang" },
     ],
-    favoriteRestaurant: new Set('Bento','Sushi','Pancake','Eggy','Tempura','Bento','Eggy','Padang','Tteok','Sushi','Sushi'),
-  };
-  // user 
+    favoriteRestaurant: [...setRestoFirstUser], 
+};
+  // user dua
+  const colorSecondUser = ["Blue", "Black", "Grey"];
+  let setColorSecondUser = new Set(colorSecondUser);
+
+  const restoSecondUser = ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"];
+  let setRestoSecondUser = new Set(restoSecondUser);
+
   const secondUser = {
       name: 'Wendy',
       gender: 'Male',
       age: 23,
       email: 'wendy@dingdong.com',
-      favoriteColor: new Set('Blue','Black', 'Grey'),
+      favoriteColor: [...setColorFirstUser],
       isHavePet: 'No',
       education: [
         { name: "SD 02", city: "Jakarta", graduate: "2010" },
@@ -31,11 +42,13 @@ const firstUser = {
         { name: "SMA 01", city: "Surabaya", graduate: "2016" },
         { name: "Universitas Maju", city: "Tangerang" },
     ],
-      favoriteRestaurant: new Set('Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy')
+      favoriteRestaurant: [...setRestoSecondUser]
   };
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [];
+users.push(firstUser)
+users.push(secondUser)
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
