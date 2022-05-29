@@ -10,10 +10,14 @@ const firstUser = {
     email: 'monica@dingdong.com',
     favoriteColor: new Set('Yellow','Pink', 'White', 'Purple'),
     isHavePet: 'Yes',
-    education: [['name: SD 01', 'city: Jakarta', 'graduate: 2016'],['name: SMP 02', 'city: Jakarta', 'graduate: 2019'], ['name: SMA 03', 'city: Tangerang']],
+    education: [
+        { name: "SD 01", city: "Jakarta", graduate: "2016" },
+        { name: "SMP 02", city: "Jakarta", graduate: "2019" },
+        { name: "SMA 03", city: "Tangerang" },
+    ],
     favoriteRestaurant: new Set('Bento','Sushi','Pancake','Eggy','Tempura','Bento','Eggy','Padang','Tteok','Sushi','Sushi'),
   };
-  // user dua
+  // user 
   const secondUser = {
       name: 'Wendy',
       gender: 'Male',
@@ -21,7 +25,12 @@ const firstUser = {
       email: 'wendy@dingdong.com',
       favoriteColor: new Set('Blue','Black', 'Grey'),
       isHavePet: 'No',
-      education: [['name: SD 02','city: Jakarta','graduate: 2010'],['name: SMP 03','city: Bogor','graduate: 2013'], ['name: SMA 01', 'city: Surabaya', 'graduate: 2016'], [['name: Univesitas Maju', 'city: Tanggerang']]],
+      education: [
+        { name: "SD 02", city: "Jakarta", graduate: "2010" },
+        { name: "SMP 03", city: "Bogor", graduate: "2013" },
+        { name: "SMA 01", city: "Surabaya", graduate: "2016" },
+        { name: "Universitas Maju", city: "Tangerang" },
+    ],
       favoriteRestaurant: new Set('Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy')
   };
 
